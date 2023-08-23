@@ -18,12 +18,7 @@ playerOne.rollsDice();
 Expected Output: 
 false
 
-Test 2: "If Player rollsDice, a randomized number with a max amount of 6 should update turnScore property."
+Test 2: "If Player rollsDice, a randomized number with a max amount of 6 should update turnScore property, otherwise return turn property as false."
 Code:
 playerOne.rollsDice();
-Expected Output:
-2
-Code: 
-playerOne.rollsDice();
-Expected Output:
-5, etc
+Expected Output: Random number from 2-6 || turn: false
