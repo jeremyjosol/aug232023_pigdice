@@ -13,12 +13,17 @@ totalScore: 0
 
 Test 1: "If Player's turnScore property = 1, return turn property as false."
 Code: 
-playerOne.rollsDice(true, 1, 0);
+Player parameters: (true, 1, 0)
+playerOne.rollsDice();
 Expected Output: 
 false
 
-  Player.prototype.rollsDice();
-  let playerOne.turnScore = 1;
-  if (playerOne.turnscore === 1){
-    return playerOne.turn false;
-  }
+Test 2: "If Player rollsDice, a randomized number with a max amount of 6 should update turnScore property."
+Code:
+playerOne.rollsDice();
+Expected Output:
+2
+Code: 
+playerOne.rollsDice();
+Expected Output:
+5, etc
