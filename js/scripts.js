@@ -1,18 +1,28 @@
-let playerOne = new Player(true, 0, 0);
-let playerTwo = new Player(false, 0, 0);
+let playerOne = new Player(true, 0, 0, 0);
+let playerTwo = new Player(false, 0, 0, 0);
 
-function Player(turn, turnScore, totalScore){
-  this.turn = turn;
-  this.turnScore = turnScore;
+// Business logic
+
+function Player(turn, diceRoll, roundScore, totalScore){
+  this.turn = turn; // boolean
+  this.diceRoll =   diceRoll; // number
+  this.roundScore = roundScore; // number
   this.totalScore = totalScore;
 
   }
 
 Player.prototype.rollsDice = function() {
-  this.turnScore = Math.floor(Math.random(this.turnScore) * 6);
-  this.totalScore += this.turnScore;
-  if (this.turnScore === 1){
-    return this.totalScore = 0;
-  } if (this.turn === false) {
-    } return this.totalScore;
-  } 
+  this.diceRoll = Math.floor(Math.random() * 6); // roll dice // increment turnScore into totalScore
+  this.roundScore += this.diceRoll;
+  if (this.diceRoll >= 2){
+    this.totalScore = this.roundScore + this.totalScore;
+    return this.totalScore;
+  } else if (this.diceRoll === 1){
+    return this.roundScore = 0;
+  }
+} 
+
+
+// Player.prototype.turnDecider = function () {
+//   if playerOne.rolls
+// }
