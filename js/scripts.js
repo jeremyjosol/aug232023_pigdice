@@ -7,3 +7,9 @@ function Player(turn, turnScore, totalScore){
   this.totalScore = totalScore;
 
   }
+
+Player.prototype.rollsDice = function() {
+  if (this.turnScore === 1){
+    return this.turn = false;
+  } return this.turn;
+}
