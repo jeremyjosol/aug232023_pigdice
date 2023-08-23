@@ -9,7 +9,10 @@ function Player(turn, turnScore, totalScore){
   }
 
 Player.prototype.rollsDice = function() {
+  this.turnScore = Math.floor(Math.random(this.turnScore) * 6);
+  this.totalScore += this.turnScore;
   if (this.turnScore === 1){
-    return this.turn = false;
-  } return this.turn;
-}
+    return this.totalScore = 0;
+  } if (this.turn === false) {
+    } return this.totalScore;
+  } 

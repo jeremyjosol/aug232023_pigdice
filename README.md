@@ -22,3 +22,8 @@ Test 2: "If Player rollsDice, a randomized number with a max amount of 6 should 
 Code:
 playerOne.rollsDice();
 Expected Output: Random number from 2-6 || turn: false
+
+Test 3: "If Player rollsDice and turnScore property is between 2-6, increment totalScore property based on number value. However, if Player rollsDice and turnScore property = 1, totalScore property = 0."
+Code:
+playerOne.rollsDice();
+Expected Output: totalScore: 2-100 || totalScore: 0
