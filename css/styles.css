@@ -1,0 +1,67 @@
+html {
+  text-align: center;
+}
+
+#container {
+  margin: auto;
+  margin-top: 75px;
+}
+
+#roll-button {
+  width: 45px;
+  height: 45px;
+}
+
+#hold-button {
+  width: 45px;
+  height: 45px;
+}
+
+#player-results {
+  margin: auto;
+  background-color:blue;
+  margin-top: 50px;
+}
+
+.player-container{
+  font-size: 1em;
+  height: 25px;
+  flex: column;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.player-container-2{
+  font-size: 1em;
+  height: 25px;
+  flex: column;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#player-dice-roll {
+  font-size: 2em;
+}
+
+#player-1 {
+  color: black;
+
+}
+
+#player-2 {
+  color: black;
+}
+
+#player-1-total {
+  color: black;
+}
+
+#player-2-total {
+  color: black;
+}

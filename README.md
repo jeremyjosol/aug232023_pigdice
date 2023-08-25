@@ -27,3 +27,13 @@ Test 3: "If Player rollsDice and turnScore property is between 2-6, increment to
 Code:
 playerOne.rollsDice();
 Expected Output: totalScore: 2-100 || totalScore: 0
+
+### Describe: Player.prototype.holdTurn();
+
+Test 1: "If Player decides to holdTurn, double Player's total score."
+Code: 
+Player parameters: (true, 0, 0, 5)
+playerOne.holdTurn();
+Expected Output: totalScore: 10
+
+### Major refactoring of tests
